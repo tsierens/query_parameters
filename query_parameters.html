@@ -1,0 +1,9 @@
+<body><script>
+var queryParameters = new URLSearchParams(new URL(document.location.href).search)
+function printParameters(value, key){
+    const div = document.createElement('div');
+    div.innerHTML = `${key}: ${value}`;
+    document.body.appendChild(div);
+}
+queryParameters.forEach(printParameters)
+</script></body>
