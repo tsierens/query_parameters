@@ -9,7 +9,7 @@ function printParameters(value, key){
         navigator.clipboard.writeText(value);
         button.innerHTML = 'Copied';
         button.onclick = function(){};
-        setTimeout(function(){button.style.visibility = 'hidden';}, 2000);
+        setTimeout(function(){button.remove();}, 2000);
     };
     div.appendChild(button);
     document.body.appendChild(div);
